@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cincai Dinner</title>
+<link href="Style/Style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/Logo.png" width="26" height="26">
+</head>
+
+<!--https://www.malaymail.com/news/eat-drink/2021/09/28/for-dai-chow-fare-with-an-artisanal-touch-pjs-fifty-tales-will-have-you-rev/2008949-->
+<body>
+<div class="chefstory">
+<header>
+<div class="logo">
+	<a href="Home Page.html" target="_self"><img src="Images/Logo.png"	width="80" height="80" alt="logo"/></a>
+</div><!--end of logo-->
+	<div class="menuToggle" onClick="toggleMenu();"></div><!--end of menutoggle-->
+	<nav class="navigation">
+  	<ul>
+		<a href="Home Page.html" onClick="toggleMenu();"><li>Home</li></a>
+		<a href="About Page.html" target="_self" onClick="toggleMenu();"><li>About</li></a>
+		<a href="Menu page_Noodle.html" target="_self" onClick="toggleMenu();"><li>Menu</li></a>
+		<a href="Story Page.html" target="_self" onClick="toggleMenu();"><li>Story</li></a>
+		<a href="Contact Page.html" onClick="toggleMenu();"><li>Contact</li></a>
+	  </ul>
+	</nav>
+</header>
+<div class="chefstory_content"> 
+<div class="content">
+	<div class="content_info">
+		<div class="story_imgbox">
+			<img src="Images/cincai_story1.jpg" alt="chef"/>
+		</div><!--end of story imgbox-->
+	</div><!--end of content info-->
+	<div class="content_info">
+	<h1>Cincai Dinner</h1>
+	<p class="p1">Regulars of Fifty Tales look forward to visiting the restaurant on the weekends for their Cincai Dinner. (Cincai may mean “casual” or “as one pleases” in local slang.) Available only on Friday through Sunday, the rotating menu often features whatever is seasonal or fresh from local markets. Phua explains, “Cincai Dinner is basically a menu that focuses on dishes that are meant to be paired with plain noodles or plain rice. Here we introduce dai chow style dishes such as our chrysanthemum clams, grilled kailan and smoked lychee sambal prawns.”</p>
+	</div><!--end of content info-->
+	</div><!--end of content-->
+	<div class="content">
+	<div class="content_info">
+	<p class="p2">Dai chow style might be understating his delicate offerings just a tad. The fresh clams are steamed with chrysanthemum oil and Chinese rose wine. Florets of kailan are lightly grilled with kelulut honey and balanced with some 32-day aged preserved duck ham (which are made in-house). There is care that goes into every dish, something Phua will attest to. He adds, “Our Cincai Dinner is only available on weekends because as a kid I remembered only having such dinners outside during weekends.” One can empathise; we all have a favourite version of sambal prawns from our childhood. With the unique fragrance and flavour of Phua’s smoked lychee sambal prawns, however, some of us might just have a new favourite now.</p>
+	</div><!--end of content info-->
+	<div class="content_info">
+		<div class="story_imgbox">
+			<img src="Images/cincai_story2.jpg" alt="noodle"/>
+		</div><!--end of story imgbox-->
+	</div><!--end of content info-->
+	</div><!--end of content-->
+	<img class="Chefstory2" src="Images/chefstory.png" alt="chefstory"/>
+	<img class="storydetail_line" src="Images/about_line.png" alt="line"/>
+	</div><!--end of chef story content-->
+	<div class="backtostory">
+	<a href="Food Recipe.html"><img src="Images/arrow button2.png" alt="arrow"/></a>
+	<p>Back to story</p>
+	</div><!--end of button-->
+
+</div><!--end of chefsory-->
+<!--footer-->
+<footer>
+<section class="footer1">
+	<h5>Fifty Tales</h5>
+	<ul>
+	  <li><a href="Home Page.html" target="_self">Home</a></li>
+	  <li><a href="About Page.html" target="_self">About</a></li>
+	  <li><a href="Menu page_Noodle.html" target="_self">Menu</a></li>
+	  <li><a href="Story Page.html" target="_self">Story</a></li>
+	  <li><a href="Contact Page.html">Contact</a></li>
+    </ul>
+</section><!--end of footer 1-->
+<section class ="footer2">
+	<h5>Fifty Tales</h5>
+	<div class="footerdetailbox">
+		<img src="Images/footer_location.png" alt="location"/>
+		<p>5 - G, Jalan Margosa SD 10/4A, 
+			<br>Bandar Sri Damansara 
+			<br>52200 Kuala Lumpur, Malaysia</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_phone.png" alt="phone"/>
+		<p>012-399-2697</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_email.png" alt="email"/>
+		<p>hundredbowls@gmail.com</p>
+	</div><!--end of footerdetailbox-->
+</section><!--end of footer2-->
+<section class="footer3">
+	<div class="footer3_textbox">
+		<h4>About</h4>
+		<p>Modern Malaysia Chinese Food
+		<br>A New Dining Experience Awaits You</p>
+	</div><!--end of footer3_textbox-->
+	<div class="footer_social">
+	<img src="Images/fb.png" alt="facebook"/>
+	<img src="Images/ig.png" alt="instagram"/>
+	</div><!--end of footer social-->
+</section><!--end of footer3-->
+</footer>
+<script>
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').cick(function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+}
+</script>
+</body>
+</html>

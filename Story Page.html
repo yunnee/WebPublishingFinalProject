@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Story Page</title>
+<link href="Style/Style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/Logo.png" width="26" height="26">
+</head>
+
+<body>
+<div id="Story_page">
+<header>
+<div>
+	<a href="Home Page.html" target="_self"><img src="Images/Logo.png"	width="80" height="80" alt="logo"/></a>
+</div><!--end of logo-->
+	<div class="menuToggle" onClick="toggleMenu();"></div><!--end of menutoggle-->
+	<nav class="navigation">
+  	<ul>
+		<a href="Home Page.html" onClick="toggleMenu();"><li>Home</li></a>
+		<a href="About Page.html" target="_self" onClick="toggleMenu();"><li>About</li></a>
+		<a href="Menu page_Noodle.html" target="_self" onClick="toggleMenu();"><li>Menu</li></a>
+		<a href="Story Page.html" target="_self" onClick="toggleMenu();"><li>Story</li></a>
+		<a href="Contact Page.html" onClick="toggleMenu();"><li>Contact</li></a>
+	  </ul>
+	</nav>
+</header>
+<div id="story_content">
+	<div id="story_title" class="title">
+		<h2>Story</h2>
+		<img src="Images/news_line.png"	width="2" height="664" alt="line"/>
+	</div><!--end of title-->
+	<div id="story1_box">
+	<div id="Story1">
+		<img src="Images/story1.png" width="478" height="495" alt="Chef's Story"/>
+		<div class="story_button_box">
+			<p>Know More</p>
+			<a href="Chef's Story.html"><img class="story_button" src="Images/arrow button.png" width="85" height="41" alt="arrow"/></a>
+		</div><!--end of story button box-->
+	</div><!--end of story1-->
+	</div><!--end of story1 box-->
+	<div id="story2_box">
+	<div id="Story2">
+		<img src="Images/story2.png" width="478" height="495" alt="Chef's Story"/>
+		<div class="story_button_box">
+			<p>Know More</p>
+			<a href="Food Recipe.html"><img class="story_button" src="Images/arrow button.png" width="85" height="41" alt="arrow"/></a>
+		</div><!--end of story button box-->
+	</div><!--end of story2-->
+	</div><!--end of story2 box-->
+	<div id="story3_box">
+	<div id="Story3">
+		<img src="Images/story3.png" width="478" height="495" alt="Chef's Story"/>
+		<div class="story_button_box">
+			<p>Know More</p>
+			<a href="Cincai Dinner.html"><img class="story_button" src="Images/arrow button.png" width="85" height="41" alt="arrow"/></a>
+		</div><!--end of story button box-->
+	</div><!--end of story3-->
+	</div><!--end of story3 box-->
+</div><!--end of story content-->
+</div><!--end of story page-->
+
+<!--footer-->
+<footer>
+<section class="footer1">
+	<h5>Fifty Tales</h5>
+	<ul>
+	  <li><a href="Home Page.html" target="_self">Home</a></li>
+	  <li><a href="About Page.html" target="_self">About</a></li>
+	  <li><a href="Menu page_Noodle.html" target="_self">Menu</a></li>
+	  <li><a href="Story Page.html" target="_self">Story</a></li>
+	  <li><a href="Contact Page.html">Contact</a></li>
+    </ul>
+</section><!--end of footer 1-->
+<section class ="footer2">
+	<h5>Fifty Tales</h5>
+	<div class="footerdetailbox">
+		<img src="Images/footer_location.png" alt="location"/>
+		<p>5 - G, Jalan Margosa SD 10/4A, 
+			<br>Bandar Sri Damansara 
+			<br>52200 Kuala Lumpur, Malaysia</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_phone.png" alt="phone"/>
+		<p>012-399-2697</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_email.png" alt="email"/>
+		<p>hundredbowls@gmail.com</p>
+	</div><!--end of footerdetailbox-->
+</section><!--end of footer2-->
+<section class="footer3">
+	<div class="footer3_textbox">
+		<h4>About</h4>
+		<p>Modern Malaysia Chinese Food
+		<br>A New Dining Experience Awaits You</p>
+	</div><!--end of footer3_textbox-->
+	<div class="footer_social">
+	<img src="Images/fb.png" alt="facebook"/>
+	<img src="Images/ig.png" alt="instagram"/>
+	</div><!--end of footer social-->
+</section><!--end of footer3-->
+</footer>
+	
+<script>
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').cick(function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu_detail_Noodle3</title>
+<link href="Style/Style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/Logo.png" width="26" height="26">
+</head>
+
+<body>
+<div class="Menu_detail">
+<header>
+<div>
+	<a href="Home Page.html" target="_self"><img src="Images/Logo.png"	width="80" height="80" alt="logo"/></a>
+</div><!--end of logo-->
+	<div class="menuToggle" onClick="toggleMenu();"></div><!--end of menutoggle-->
+	<nav class="navigation">
+  	<ul>
+		<a href="Home Page.html" onClick="toggleMenu();"><li>Home</li></a>
+		<a href="About Page.html" target="_self" onClick="toggleMenu();"><li>About</li></a>
+		<a href="Menu page_Noodle.html" target="_self" onClick="toggleMenu();"><li>Menu</li></a>
+		<a href="Story Page.html" target="_self" onClick="toggleMenu();"><li>Story</li></a>
+		<a href="Contact Page.html" onClick="toggleMenu();"><li>Contact</li></a>
+	  </ul>
+	</nav>
+</header>
+<div class="menu_detail_content">
+	<div class="menu_detail_imgbox">
+		<img src="Images/Noodle4_detail.png" width="840" height="875" alt="OG Style"/>
+		<img class="soup_noodle" src="Images/Noodle4.png" width="121" height="457" alt="50 Tales Laksa"/>
+	</div><!--end of menu detail imgbox-->
+	<div class="menu_detail_textbox">
+		<h1>50 Tales Laksa</h1>
+		<h2>RM15</h2>
+		<p>Our very own laksa paste; mixed with our chicken broth plus some very good palm sugar and coconut milk will make you drink the soup till the last drop - at least that is what chef boss says hahaha. On top of that we have some new sharing plate: 1. Steam Chicken served with our spring onion pesto and pickled cucumbers; 2. Fried Chicken tenders with our aged calamansi salt.</p>
+	</div><!--end of menu detail_textbox-->
+	<img class="menu_detail_line" src="Images/about_line.png" width="2" height="665" alt="line"/>
+	<div class="back_button">
+		<a href="Menu page_Noodle.html"><img class="arrow" src="Images/arrow button2.png" width="85" height="41" alt="arrow"/></a>
+		<h4>Back to menu</h4>
+	</div><!--end of back button-->
+</div><!--end of menu detail content-->
+</div><!--end of menu detail-->
+<!--footer-->
+<footer>
+<section class="footer1">
+	<h5>Fifty Tales</h5>
+	<ul>
+	  <li><a href="Home Page.html" target="_self">Home</a></li>
+	  <li><a href="About Page.html" target="_self">About</a></li>
+	  <li><a href="Menu page_Noodle.html" target="_self">Menu</a></li>
+	  <li><a href="Story Page.html" target="_self">Story</a></li>
+	  <li><a href="Contact Page.html">Contact</a></li>
+    </ul>
+</section><!--end of footer 1-->
+<section class ="footer2">
+	<h5>Fifty Tales</h5>
+	<div class="footerdetailbox">
+		<img src="Images/footer_location.png" alt="location"/>
+		<p>5 - G, Jalan Margosa SD 10/4A, 
+			<br>Bandar Sri Damansara 
+			<br>52200 Kuala Lumpur, Malaysia</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_phone.png" alt="phone"/>
+		<p>012-399-2697</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_email.png" alt="email"/>
+		<p>hundredbowls@gmail.com</p>
+	</div><!--end of footerdetailbox-->
+</section><!--end of footer2-->
+<section class="footer3">
+	<div class="footer3_textbox">
+		<h4>About</h4>
+		<p>Modern Malaysia Chinese Food
+		<br>A New Dining Experience Awaits You</p>
+	</div><!--end of footer3_textbox-->
+	<div class="footer_social">
+	<a href="https://www.facebook.com/fiftytalesmalaysia"><img src="Images/fb.png" alt="facebook"/></a>
+	<a href="https://www.instagram.com/fifty_tales/"><img src="Images/ig.png" alt="instagram"/></a> 
+	</div><!--end of footer social-->
+</section><!--end of footer3-->
+</footer>
+<script>
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').cick(function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+}
+</script>
+</body>
+</html>

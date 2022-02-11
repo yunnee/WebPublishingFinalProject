@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Update</title>
+<link href="Style/Style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/Logo.png" width="26" height="26">
+</head>
+<!--https://www.malaymail.com/news/eat-drink/2021/09/28/for-dai-chow-fare-with-an-artisanal-touch-pjs-fifty-tales-will-have-you-rev/2008949-->
+<body>
+<div class="chefstory">
+<header>
+<div class="logo">
+	<a href="Home Page.html" target="_self"><img src="Images/Logo.png"	width="80" height="80" alt="logo"/></a>
+</div><!--end of logo-->
+	<div class="menuToggle" onClick="toggleMenu();"></div><!--end of menutoggle-->
+	<nav class="navigation">
+  	<ul>
+		<a href="Home Page.html" onClick="toggleMenu();"><li>Home</li></a>
+		<a href="About Page.html" target="_self" onClick="toggleMenu();"><li>About</li></a>
+		<a href="Menu page_Noodle.html" target="_self" onClick="toggleMenu();"><li>Menu</li></a>
+		<a href="Story Page.html" target="_self" onClick="toggleMenu();"><li>Story</li></a>
+		<a href="Contact Page.html" onClick="toggleMenu();"><li>Contact</li></a>
+	  </ul>
+	</nav>
+</header>
+<div class="chefstory_content"> 
+<div class="content">
+	<div class="content_info">
+		<div class="story_imgbox">
+			<img src="Images/Menu_noodle3.png" alt="OG noodle"/>
+		</div><!--end of story imgbox-->
+	</div><!--end of content info-->
+	<div class="content_info">
+	<h1>Menu Update</h1>
+	<p class="p1">The OG is BACK!!!
+
+OG Style.
+
+The very first bowl since we open our doors welcoming you to our story and a journey to modern Malaysian Chinese cuisine.
+
+Chef boss’s all time favourite. Some old school pork lard over noodles with our own soy sauce mix. Then topped with a beer braised pork and chinese style marinated soft boil egg.
+
+Satisfaction in every slurp.
+</p>
+	</div><!--end of content info-->
+	</div><!--end of content-->
+	<div class="content">
+	<div class="content_info">
+	<p class="p2">CINCAI DINNER
+DINE IN NOW AVAILABLE
+
+Make your reservations today for this coming Friday to Sunday 5pm - 9pm
+
+Roast 1/2 chicken ( require 1 day pre order)
+Recommend and it is our chef’s favourite.
+The chicken bath in our special liquid then marinated with five spice. Lastly showed with love.
+
+Many more days exciting dishes.
+
+To make your reservations kindly Whatsapp
+012-3992697</p>
+	</div><!--end of content info-->
+	<div class="content_info">
+		<div class="story_imgbox">
+			<img src="Images/News6.jpg" alt="noodle"/>
+		</div><!--end of story imgbox-->
+	</div><!--end of content info-->
+	</div><!--end of content-->
+	<img class="Chefstory2" src="Images/News_word1.png" alt="chefstory"/>
+	<img class="storydetail_line" src="Images/about_line.png" alt="line"/>
+	</div><!--end of chef story content-->
+	<div class="backtostory">
+	<a href="Home Page.html"><img src="Images/arrow button2.png" alt="arrow"/></a>
+	<p>Back to news</p>
+	</div><!--end of button-->
+		
+	<div class="nextstory">
+	<p>Next News</p>
+	<a href="News_DineinSOP.html"><img src="Images/arrow button.png" alt="arrow"/></a>
+	</div><!--end of button-->
+</div><!--end of chefsory-->
+<!--footer-->
+<footer>
+<section class="footer1">
+	<h5>Fifty Tales</h5>
+	<ul>
+	  <li><a href="Home Page.html" target="_self">Home</a></li>
+	  <li><a href="About Page.html" target="_self">About</a></li>
+	  <li><a href="Menu page_Noodle.html" target="_self">Menu</a></li>
+	  <li><a href="Story Page.html" target="_self">Story</a></li>
+	  <li><a href="Contact Page.html">Contact</a></li>
+    </ul>
+</section><!--end of footer 1-->
+<section class ="footer2">
+	<h5>Fifty Tales</h5>
+	<div class="footerdetailbox">
+		<img src="Images/footer_location.png" alt="location"/>
+		<p>5 - G, Jalan Margosa SD 10/4A, 
+			<br>Bandar Sri Damansara 
+			<br>52200 Kuala Lumpur, Malaysia</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_phone.png" alt="phone"/>
+		<p>012-399-2697</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_email.png" alt="email"/>
+		<p>hundredbowls@gmail.com</p>
+	</div><!--end of footerdetailbox-->
+</section><!--end of footer2-->
+<section class="footer3">
+	<div class="footer3_textbox">
+		<h4>About</h4>
+		<p>Modern Malaysia Chinese Food
+		<br>A New Dining Experience Awaits You</p>
+	</div><!--end of footer3_textbox-->
+	<div class="footer_social">
+	<img src="Images/fb.png" alt="facebook"/>
+	<img src="Images/ig.png" alt="instagram"/>
+	</div><!--end of footer social-->
+</section><!--end of footer3-->
+</footer>
+	<script>
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').cick(function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+}
+</script>
+</body>
+</html>

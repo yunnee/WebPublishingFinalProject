@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu page_Sides</title>
+<link href="Style/Style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Images/Logo.png" width="26" height="26">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('Images/Asset 119.png','Images/Asset 120.png','Images/Asset 121.png','Images/Asset 122.png')">
+<div class="menu_page">
+<header>
+<div>
+	<a href="Home Page.html" target="_self"><img src="Images/Logo.png"	width="80" height="80" alt="logo"/></a>
+</div><!--end of logo-->
+	<div class="menuToggle" onClick="toggleMenu();"></div><!--end of menutoggle-->
+	<nav class="navigation">
+  	<ul>
+		<a href="Home Page.html" onClick="toggleMenu();"><li>Home</li></a>
+		<a href="About Page.html" target="_self" onClick="toggleMenu();"><li>About</li></a>
+		<a href="Menu page_Noodle.html" target="_self" onClick="toggleMenu();"><li>Menu</li></a>
+		<a href="Story Page.html" target="_self" onClick="toggleMenu();"><li>Story</li></a>
+		<a href="Contact Page.html" onClick="toggleMenu();"><li>Contact</li></a>
+	  </ul>
+	</nav>
+</header>
+	
+<div class="menu_categories">
+<nav>
+	<ul>
+		<li><a href="Menu page_Noodle.html">Noodles</a></li>
+		<li><a href="Menu page_Rice.html">Rice</a></li>
+		<li><a href="Menu page_Sides.html">Sides</a></li>
+		<li><a href="Menu page_Cincai dinner.html">Cincai Dinner</a></li>
+		<li><a href="Menu page_Beverage.html">Beverages</a></li>
+    </ul>	
+</nav>
+</div><!--end of menu categories-->
+
+<div class="Menu_content">
+<div class="noodle">
+	<h2>Sides</h2>
+	<img src="Images/logo line.png" width="2px" height="300" alt="line"/>
+</div><!--end of noodle-->
+<div class="Options_box">
+	<div class="options">
+		<a href="Menu_detail_Side1.html"><img src="Images/Menu_side1.jpg" alt="Nam Yu Zha Yuk" width="478" height="478" id="Image1" onMouseOver="MM_swapImage('Image1','','Images/Asset 119.png',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	  <div class="textbox">
+		<p>Nam Yu Zha Yuk</p>
+		<div class="price">
+			<p>RM15</p>
+		</div><!--end of price-->
+		</div><!--end of textbox-->
+	</div><!--end of options-->
+	
+	<div class="options">
+		<a href="Menu_detail_Side2.html"><img src="Images/Menu_side2.jpg" alt="glutinous rice ball" width="478" height="478" id="Image2" onMouseOver="MM_swapImage('Image2','','Images/Asset 120.png',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	  <div class="textbox">
+		<p>Glutinous Rice Ball</p>
+		<div class="price">
+			<p>RM15</p>
+		</div><!--end of price-->
+		</div><!--end of textbox-->
+	</div><!--end of options-->
+	
+	<div class="options">
+		<a href="Menu_detail_Side3.html"><img src="Images/Menu_side3.jpg" alt="Pork Ball" width="478" height="478" id="Image3" onMouseOver="MM_swapImage('Image3','','Images/Asset 121.png',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	  <div class="textbox">
+		<p>Pork Ball</p>
+		<div class="price">
+			<p>RM15</p>
+		</div><!--end of price-->
+		</div><!--end of textbox-->
+	</div><!--end of options-->
+	
+	<div class="options">
+		<a href="Menu_detail_Side4.html"><img src="Images/Menu_side4.jpg" alt="Soft boiled egg" width="478" height="477" id="Image4" onMouseOver="MM_swapImage('Image4','','Images/Asset 122.png',1)" onMouseOut="MM_swapImgRestore()"/></a>
+		  <div class="textbox">
+			<p>Soft Boiled Egg</p>
+			<div class="price">
+				<p>RM15</p>
+			</div><!--end of price-->
+			</div><!--end of textbox-->
+	</div><!--end of options-->
+
+</div><!--end of options box-->
+<div class="menu_choices">
+	<img src="Images/Menu Choices.png" width="175" height="721" alt="menu choices"/>
+</div><!--end of menu choices-->
+</div><!--end of menu content-->
+</div><!--end of menu page-->
+<!--footer-->
+<footer>
+<section class="footer1">
+	<h5>Fifty Tales</h5>
+	<ul>
+	  <li><a href="Home Page.html" target="_self">Home</a></li>
+	  <li><a href="About Page.html" target="_self">About</a></li>
+	  <li><a href="Menu page_Noodle.html" target="_self">Menu</a></li>
+	  <li><a href="Story Page.html" target="_self">Story</a></li>
+	  <li><a href="Contact Page.html">Contact</a></li>
+    </ul>
+</section><!--end of footer 1-->
+<section class ="footer2">
+	<h5>Fifty Tales</h5>
+	<div class="footerdetailbox">
+		<img src="Images/footer_location.png" alt="location"/>
+		<p>5 - G, Jalan Margosa SD 10/4A, 
+			<br>Bandar Sri Damansara 
+			<br>52200 Kuala Lumpur, Malaysia</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_phone.png" alt="phone"/>
+		<p>012-399-2697</p>
+	</div><!--end of footerdetailbox-->
+	<div class="footerdetailbox">
+		<img src="Images/footer_email.png" alt="email"/>
+		<p>hundredbowls@gmail.com</p>
+	</div><!--end of footerdetailbox-->
+</section><!--end of footer2-->
+<section class="footer3">
+	<div class="footer3_textbox">
+		<h4>About</h4>
+		<p>Modern Malaysia Chinese Food
+		<br>A New Dining Experience Awaits You</p>
+	</div><!--end of footer3_textbox-->
+	<div class="footer_social">
+	<a href="https://www.facebook.com/fiftytalesmalaysia"><img src="Images/fb.png" alt="facebook"/></a>
+	<a href="https://www.instagram.com/fifty_tales/"><img src="Images/ig.png" alt="instagram"/></a> 
+	</div><!--end of footer social-->
+</section><!--end of footer3-->
+</footer>
+<script>
+function toggleMenu(){
+	var menuToggle = document.querySelector('.menuToggle');
+	menuToggle.classList.toggle('active');
+	var navigation = document.querySelector('.navigation');
+	navigation.classList.toggle('active');
+	$('ul li').cick(function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+}
+</script>
+</body>
+</html>
