@@ -516,7 +516,7 @@ header ul a li:hover{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-item: center;
+	align-items: center;
 }
 .Options_box .options{
 	flex: 31%;
